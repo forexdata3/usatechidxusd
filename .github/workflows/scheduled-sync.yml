@@ -22,7 +22,7 @@ permissions:
   contents: read
 
 env:
-  DEFAULT_SYMBOLS: "usatechidxusd"
+  DEFAULT_SYMBOLS: "NASDAQ-100"
   HF_DATASET: Esmaeil9ss/Tickdata
 
 jobs:
