@@ -73,7 +73,8 @@ def local_entries(folder: Path):
         m=DAILY_RE.match(p.name)
         if not m: continue
         sym=m.group("symbol").upper(); day=m.group("day")
-        rel=f"{sym}/{sym}_{day}.BIN"
+        folder_name = "NASDAQ-100"
+rel = f"{folder_name}/{sym}_{day}.BIN"
         out[rel]=Entry(sym, rel, day, p.stat().st_size, p)
     return out
 
